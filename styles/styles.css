@@ -1,0 +1,74 @@
+/*General*/
+
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+.container {
+  margin-top: 10%;
+}
+
+/*Login*/
+
+.login-card {
+  max-width: 40%;
+  max-height: 80%;
+  background: #2a2b38;
+  border-radius: 0.5rem;
+  margin: auto;
+  display: grid;
+  place-content: center;
+}
+
+.login-title {
+  color: khaki;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-field {
+  background-color: #1c1d27;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 25%;
+  max-width: 90%;
+  border-radius: 4px;
+  padding: .5em 1em;
+}
+
+.login-input {
+  background: none;
+  border: none;
+  outline: none;
+  color: khaki;
+}
+
+.login-btn {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 3% 10%;
+  max-width: 50%;
+  background-color: #ffeba7;
+  color: #5e6681;
+  font-weight: bold;
+  font-size: .5em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 6px 24px 0 rgb(255 235 167 / 20%);
+  transition: all .3s ease-in-out;
+ }
+
+ .login-btn:hover {
+  background-color: #5e6681;
+  color: #ffeba7;
+  box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+ }
