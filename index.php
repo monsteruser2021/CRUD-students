@@ -20,7 +20,7 @@
       <div class="container">
         <form action="sections/index.php" method="post">
           <div class="login-card">
-            <h5 class="login-title">Best login!</h5>
+            <h1 class="login-title">CRUD Login!</h1>
             <div class="login-field">
               <input type="text" class="login-input" name="username" id="username" placeholder="Username" >
             </div>

@@ -26,10 +26,10 @@
 
 .login-title {
   color: khaki;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: 600;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .login-field {
@@ -37,10 +37,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 25%;
-  max-width: 90%;
+  margin-bottom: 1rem;
   border-radius: 4px;
-  padding: .5em 1em;
+  padding: .5rem;
 }
 
 .login-input {
@@ -52,15 +51,11 @@
 }
 
 .login-btn {
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 10% auto;
   padding: 3% 10%;
-  max-width: 50%;
   background-color: #ffeba7;
   color: #5e6681;
   font-weight: bold;
-  font-size: .5em;
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
@@ -78,27 +73,29 @@
  /*Navbar*/
 
  .nav-container{
-  margin: 0 5%;
+  margin: 1% 5%;
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #eee;
   background-color: #2a2c3d;
-  box-shadow: 0 5px 8px -4px #eeeeee9a;
-  border-radius: 0.3rem;
-  padding: 0.4rem 0.6rem;
-  font-size: 0.6rem;
+  box-shadow: 0 0.5rem 1.2rem -0.25rem #ffeaa798;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
  }
 
  .nav-title {
   text-transform: uppercase;
   font-weight: bold;
+  color: #ffeba7;
  }
 
  .nav-items{
-  font-size: 0.5rem;
+  font-size: 1.2rem;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
  }
 
  a {
@@ -112,12 +109,132 @@
  }
 
 
+/*Courses view*/
 
+/* General container */
+.cour-container {
+  margin: 1% 5%;
+  width: auto;
+  max-height: 70%;
+  margin: 3rem 6rem;
+  padding: 2%;
+  background-color: #41475a;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
 
+/* Course control panel */
 
+.cour-panel {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.5rem;
+}
 
+.cour-panel-title {
+  color: #ffeba7;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
 
+.cour-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
 
+.cour-lbl {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.cour-input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: #2a2b38;
+  font-size: 1rem;
+}
+
+.cour-btn {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.cour-btn-add, .cour-btn-edit, .cour-btn-del {
+  background-color: #2a2c3d;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cour-btn-add:hover, .cour-btn-edit:hover, .cour-btn-del:hover {
+  background-color: #ffeba7;
+  color: #2a2c3d;
+}
+
+/* Course table */
+
+.cour-tab-container {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.cour-tab {
+  width: 100%;
+  background-color: #2a2c3d;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.cour-title-tab {
+  font-size: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffeba7;
+}
+
+.cour-title-tab th {
+  padding: 0.5rem 1rem;
+}
+
+.cour-separator td {
+  padding: 0;
+}
+
+.cour-separator hr {
+  border: none;
+  border-top: 2px solid #ffeba7;
+  margin: 0;
+}
+
+.cour-content-tab td {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-align: left;
+}
+
+.cour-content-tab td:nth-child(1) {
+  width: 20%;
+}
+
+.cour-content-tab td:nth-child(2) {
+  width: 60%;
+}
+
+.cour-content-tab td:nth-child(3) {
+  width: 20%;
+}
 
 
 
