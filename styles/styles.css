@@ -48,6 +48,7 @@
   border: none;
   outline: none;
   color: khaki;
+  cursor: pointer;
 }
 
 .login-btn {
@@ -71,4 +72,53 @@
   background-color: #5e6681;
   color: #ffeba7;
   box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+  cursor: pointer;
  }
+
+ /*Navbar*/
+
+ .nav-container{
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eee;
+  background-color: #2a2c3d;
+  box-shadow: 0 5px 8px -4px #eeeeee9a;
+  border-radius: 0.3rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.6rem;
+ }
+
+ .nav-title {
+  text-transform: uppercase;
+  font-weight: bold;
+ }
+
+ .nav-items{
+  font-size: 0.5rem;
+  display: flex;
+  gap: 1rem;
+ }
+
+ a {
+  text-decoration: none;
+  color: #eee;
+  transition: color 0.3s ease;
+ }
+
+ a:hover {
+  color: #ffeba7;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ /*Footer*/
