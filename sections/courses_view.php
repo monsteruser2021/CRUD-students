@@ -1,4 +1,5 @@
 <?php include('../templates/header.php'); ?>
+<?php include('../sections/courses.php'); ?>
 
 <link rel="stylesheet" href="/CRUD-students/styles/styles.css?version=1.0">
 
