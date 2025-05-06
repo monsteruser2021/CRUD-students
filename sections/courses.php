@@ -24,7 +24,10 @@ if($action){
       echo $sql;
     break;
     case 'delete':
-      $sql="DELETE FROM courses WHERE id=$id";
+      $sql="DELETE FROM courses WHERE id=:id";
+      $search=$connectionDB->prepare($sql);
+      $search->bindParam(':id',$id);
+      $search->execute();
       echo $sql;
     break;
     case 'select':
