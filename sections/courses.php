@@ -20,15 +20,19 @@ if($action){
       $search->execute();
     break;
     case 'edit':
-      $sql="UPDATE courses SET course_name = '$course_name' WHERE id=$id";
-      echo $sql;
+      $sql="UPDATE courses SET course_name=:course_name WHERE id=:id";
+      $search=$connectionDB->prepare($sql);
+      $search->bindParam(':id',$id);
+      $search->bindParam(':course_name',$course_name);
+      $search->execute();
+      //echo $sql;
     break;
     case 'delete':
       $sql="DELETE FROM courses WHERE id=:id";
       $search=$connectionDB->prepare($sql);
       $search->bindParam(':id',$id);
       $search->execute();
-      echo $sql;
+      //echo $sql;
     break;
     case 'select':
       $sql="SELECT * FROM courses WHERE id=:id";
