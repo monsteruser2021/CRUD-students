@@ -17,6 +17,7 @@
           class="cour-input"
           name="id"
           id="id"
+          value="<?php echo $id; ?>"
           placeholder="ID">
         </div>
         <div class="cour-field">
@@ -26,12 +27,13 @@
           class="cour-input"
           name="course_name"
           id="course_name"
+          value="<?php echo $course_name; ?>"
           placeholder="Course name">
         </div>
         <div class="cour-btn">
-          <button type="button" class="cour-btn-add">Add</button>
-          <button type="button" class="cour-btn-edit">Edit</button>
-          <button type="button" class="cour-btn-del">Delete</button>
+          <button type="submit" name="action" value="add" class="cour-btn-add">Add</button>
+          <button type="submit" name="action" value="edit" class="cour-btn-edit">Edit</button>
+          <button type="submit" name="action" value="delete" class="cour-btn-del">Delete</button>
         </div>
       </div>
     </form>
@@ -51,11 +53,18 @@
           <tr class="cour-separator">
             <td colspan="3"><hr></td>
           </tr>
-          <tr class="cour-content-tab">
-            <td>1</td>
-            <td>Course 1</td>
-            <td>Select</td>
-          </tr>
+          <?php foreach($coursesList as $course){?>
+            <tr class="cour-content-tab">
+              <td> <?php echo $course['id']; ?> </td>
+              <td> <?php echo $course['course_name']; ?> </td>
+              <td>
+                <form action="" method="post">
+                  <input type="hidden" name="id" id="id" value="<?php echo $course['id']; ?>">
+                  <input type="submit" value="select" name="action" class="">
+                </form>
+              </td>
+            </tr>
+          <?php }?>
         </tbody>
       </table>
     </div>
