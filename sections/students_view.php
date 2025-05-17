@@ -68,11 +68,13 @@
           <tr class="cour-separator">
             <td colspan="3"><hr></td>
           </tr>
-          <tr class="cour-content-tab">
-            <td>1</td>
-            <td>Student 1</td>
-            <td>Select</td>
-          </tr>
+          <?php foreach ($students as $student):?>
+            <tr class="cour-content-tab">
+              <td><?php echo $student['id']; ?></td>
+              <td><?php echo $student['names']; ?> <?php echo $student['last_names']; ?></td>
+              <td>Select</td>
+            </tr>
+          <?php endforeach;?>
         </tbody>
       </table>
     </div>
