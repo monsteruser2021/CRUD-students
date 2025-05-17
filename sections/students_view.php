@@ -29,12 +29,12 @@
           placeholder="Student name">
         </div>
         <div class="cour-field">
-          <label for="last_name" class="cour-lbl">Student last names</label>
+          <label for="last_names" class="cour-lbl">Student last names</label>
           <input 
           type="text"
           class="cour-input"
-          name="last_name"
-          id="last_name"
+          name="last_names"
+          id="last_names"
           placeholder="last last names">
         </div>
         <div class="cour-field">
@@ -46,9 +46,9 @@
           </select>
         </div>
         <div class="cour-btn">
-          <button type="submit" class="cour-btn-add">Add</button>
-          <button type="submit" class="cour-btn-edit">Edit</button>
-          <button type="submit" class="cour-btn-del">Delete</button>
+          <button type="submit" name="action" value="add" class="cour-btn-add">Add</button>
+          <button type="submit" name="action" value="edit" class="cour-btn-edit">Edit</button>
+          <button type="submit" name="action" value="delete" class="cour-btn-del">Delete</button>
         </div>
       </div>
     </form>
